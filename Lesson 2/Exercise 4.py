@@ -1,0 +1,13 @@
+with open("show_arp.txt") as f:
+    show_arp = f.readlines()
+    print(type(show_arp))
+    print(len(show_arp))
+    print(show_arp)
+    print(show_arp[0])
+    print(show_arp[-1])
+    fields = show_arp[0].split()
+    field = show_arp[0].strip().split(",")
+    print(field)
+    print(type(fields))
+    print(len(fields))
+    print(f"First field: {fields[0]}", f"\nLast field: {fields[-1]}")
